@@ -22,7 +22,7 @@ agregar.forEach(producto => {
 // Elimine el último elemento utilizando pop.
 // Muestre el arreglo resultante utilizando forEach.
 
-var nombres = ["angel", "luis","mario","sofia", "ana"]
+var nombres = ["angel", "luis","mario","sofia", "ana"];
 
 function eliminarExtremos(lista) {
     lista.shift();
@@ -37,3 +37,24 @@ eliminarExtremos(nombres);
 nombres.forEach(nombre => {
     console.log(nombre);
 });
+
+// Cree una función llamada gestionarFila.
+// Dentro de la función, cree un arreglo con varias personas.
+// Agregue una nueva persona al final utilizando push.
+// Elimine la primera persona utilizando shift.
+// Imprima en consola la persona atendida y la fila restante.
+
+function gestionarFila(){
+    let personas = ["angel", "luis","mario","sofia", "ana"];
+    personas.push("miguel");
+    let atendido = personas.shift();
+    console.log("persona atendida:", atendido);
+    console.log("fila restante:");
+
+    personas.forEach(persona => {
+        console.log(persona);
+    });
+}
+
+gestionarFila();
+

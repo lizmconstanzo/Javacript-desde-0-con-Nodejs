@@ -38,6 +38,9 @@ nombres.forEach(nombre => {
     console.log(nombre);
 });
 
+// Cree un sistema de carrito de compras utilizando funciones.
+
+// Debe crear las siguientes funciones:
 // Cree una función llamada gestionarFila.
 // Dentro de la función, cree un arreglo con varias personas.
 // Agregue una nueva persona al final utilizando push.
@@ -57,4 +60,30 @@ function gestionarFila(){
 }
 
 gestionarFila();
+
+
+// Cree una función que reciba un arreglo de números.
+// Recorra el arreglo utilizando forEach.
+// Guarde los números pares en un nuevo arreglo utilizando push.
+// Imprima el nuevo arreglo en consola.
+
+function arreglos(){
+    let numeros = [1, 2 , 3, 4 ,5, 6, 7, 8, 9, 10];
+    let pares = [];
+    let impares =[];
+
+    numeros.forEach(numero => {
+        if (numero % 2 === 0) {
+            pares.push(numero);
+        }else{
+            impares.push(numero);
+        }
+    });
+        console.log("los numeros pares son:", pares);
+        console.log("los numeros impares son:", impares);
+
+    }
+
+
+arreglos();
 

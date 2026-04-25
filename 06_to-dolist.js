@@ -14,5 +14,22 @@ function mostrarTareas(tareas) {
 }
 
 function completarTarea(tareas, index){
-    tareas[index].completada = 
+    tareas[index].completada = true
 }
+
+function eliminarTarea(tareas, index){
+    tareas.splice(index, 1);
+}
+
+agregarTarea(tareas, "Terminar tarea");
+agregarTarea(tareas, "Estudiar");
+agregarTarea(tareas, "Arreglar computadora");
+
+mostrarTareas(tareas);
+
+completarTarea(tareas, 2);
+
+mostrarTareas(tareas);
+eliminarTarea(tareas, 1);
+
+mostrarTareas(tareas);

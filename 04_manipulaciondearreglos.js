@@ -214,3 +214,101 @@ let existe = roles.includes("guest");
 console.log(existe);
 
 
+// 16. Cree una función que:
+
+// una las palabras en un solo texto
+// separadas por espacio " "
+// imprima el resultado
+
+let palabras = ["Hola", "como", "estas"];
+
+let texto = palabras.join(" ")
+console.log(texto);
+
+// 17. Convierta el arreglo en un string separado por " - "
+// Ejemplo esperado: "1 - 2 - 3 - 4 - 5"
+
+let numerosB = [1, 2, 3, 4, 5];
+
+let num = numerosB.join(" - ")
+console.log(num);
+
+// 18. Cree un nuevo arreglo que contenga todas las frutas
+// NO modifique los originales
+
+let frutas1 = ["manzana", "banana"];
+let frutas2 = ["pera", "uva"];
+let frutas3 = frutas1.concat(frutas2);
+console.log(frutas3);
+
+
+// 19. Una ambos arreglos
+// Luego recorra el nuevo arreglo con forEach e imprima los números
+
+let numeros1 = [1,2,3];
+let numeros2 = [4,5,6];
+let numeros3 = numeros1.concat(numeros2)
+
+numeros3.forEach(numero=>{
+    console.log(numero);
+})
+
+//20. Obtenga un nuevo arreglo con:
+// desde el índice 1 hasta el 3
+// imprímalo
+
+let numerosC = [10, 20, 30, 40, 50];
+
+let indice = numerosC.slice (1, 4);
+console.log(indice);
+
+// 21. Cree una copia del arreglo SIN modificar el original
+
+let nombres2 = ["Ana", "Luis", "Carlos", "Maria"];
+
+let copia = nombres2.slice()
+console.log(nombres2);
+console.log(copia);
+
+// 22. Elimine "verde" usando splice
+
+let colores = ["rojo", "azul", "verde", "amarillo"];
+
+colores.splice(2, 1)
+console.log(colores);
+
+// 23. Reemplace el número 3 por 99
+
+let numerosD = [1,2,3,4,5];
+
+numerosD.splice(2, 1, 99);
+console.log(numerosD);
+
+// 24. Ordene los números de menor a mayor
+
+let numerosE = [5, 1, 9, 3, 7];
+
+numerosE.sort((a,b)=> a - b);
+
+console.log(numerosE);
+
+// 25. Ordene los productos por precio (de menor a mayor)
+
+let productos2 = [
+    {nombre: "Laptop", precio: 1000},
+    {nombre: "Mouse", precio: 20},
+    {nombre: "Teclado", precio: 80}
+];
+
+productos2.sort((menor, mayor)=> menor.precio - mayor.precio )
+console.log(productos2);
+
+
+// 26. Ordene los nombres alfabéticamente
+// Luego conviértalos en un string separado por coma
+
+let nombres3 = ["Carlos", "Ana", "Luis", "Maria"];
+console.log(nombres3.sort());
+
+let separar = nombres3.join(", ");
+console.log(separar);
